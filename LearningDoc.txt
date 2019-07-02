@@ -1,1 +1,11 @@
 git init - Initialize repository
+ls -al - list all files
+git add . -Adds all files in the project
+git commit -m "My Commit inline"
+git clone https://exmp.com.git
+
+====================================================Alias===================================
+For Alias :
+  1.open ~/.bashrc file
+  2.at the end configure : alias aliasName="pathtoAlias"
+============================================================================================

@@ -2,6 +2,7 @@ git init - Initialize repository
 ls -al - list all files
 git add . -Adds all files in the project
 git commit -m "My Commit inline"
+git commit -am "My Commit inline" : for add and commit
 git clone https://exmp.com.git
 
 ====================================================Alias===================================

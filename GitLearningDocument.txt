@@ -8,6 +8,7 @@ git ls-files : list all tracked files
 mkdir -p level1/level2/level3 : for creating nested directories   
 git mv file.txt newFile.txt : change name or Rename file and direclty adds the file
 git add -A : recursively add files along with checks for rename or move or deleted files
+git rm fileName : removes files
 
 ====================================================Alias===================================
 For Alias :

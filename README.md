@@ -1,7 +1,7 @@
-#Starter WEB Project
+# Starter WEB Project
 
-##Intro
+## Intro
 
-##Purpouse
+## Purpouse
 
-##How to contribute
+## How to contribute

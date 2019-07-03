@@ -17,6 +17,15 @@ git log --since="1 days ago" : shows commis before one day
 git log -- fileName : shows particular file commis
 git log --follow fileName : shows all commits even file name changed
 git remote add origin https://github.com/user/repo.git : Set a new remote
+git diff HEAD : Shows all diff along with cached and normal 
+git difftool : shows diff in tool
+git difftool HEAD fileName: shows diff of all in a file
+git diff --cached/--staged
+======================================Diff between commits=============
+git diff a90936c 9asfehs5 : shows diff between two commits
+git diff a90936c 9asfehs5 fileName: shows diff between two commits in this file
+git diff HEAD HEAD^:last commit
+git diff branch branch1 fileName(optional): shows diff between two branches
 =========================================merge=========================
 git config --global merge.tool p4merge
 git config --global mergetool.prompt false

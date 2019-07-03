@@ -16,7 +16,12 @@ git log fee371b...0e9af94 : shows commits in between that.
 git log --since="1 days ago" : shows commis before one day
 git log -- fileName : shows particular file commis
 git log --follow fileName : shows all commits even file name changed
-
+git remote add origin https://github.com/user/repo.git : Set a new remote
+=========================================merge=========================
+git config --global merge.tool p4merge
+git config --global mergetool.prompt false
+git config --global diff.tool p4merge
+git config --global difftool.prompt false
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

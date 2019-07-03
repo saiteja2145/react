@@ -9,8 +9,27 @@ mkdir -p level1/level2/level3 : for creating nested directories
 git mv file.txt newFile.txt : change name or Rename file and direclty adds the file
 git add -A : recursively add files along with checks for rename or move or deleted files
 git rm fileName : removes files
+git log --abbrev-commit : shows commit Hash only 7digits
+git log --oneline : shows each commit in a single line
+git log --oneline --graph --decorate : --graph and decorate will show brach and where we pulled
+git log fee371b...0e9af94 : shows commits in between that.
+git log --since="1 days ago" : shows commis before one day
+git log -- fileName : shows particular file commis
+git log --follow fileName : shows all commits even file name changed
 
-====================================================Alias===================================
+=========================================git Alias=========================================
+git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
+changes will be stored in git config file for editing.
+===========================================================================================
+=========================================git Ignore========================================
+for files - fileName.txt
+for folders - folder/
+for all files - *.txt
+===========================================================================================
+===========================================Help============================================
+git help command
+===========================================================================================
+===========================================Alias===========================================
 For Alias :
   1.open ~/.bashrc file
   2.at the end configure : alias aliasName="pathtoAlias"

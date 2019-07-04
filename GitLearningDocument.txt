@@ -28,6 +28,7 @@ git branch -m mynewbrach newbranch : rename branch
 git brach -d newbranch : deletes a brach will not delete the branch currently working
 git checkout -b newbranch : creates and checkout to new branch
 git merge newbranch : merges newbranch with current branch
+git merge newbranch --no-ff : no fast forward merge
 ======================================Diff between commits==========================
 git diff a90936c 9asfehs5 : shows diff between two commits
 git diff a90936c 9asfehs5 fileName: shows diff between two commits in this file

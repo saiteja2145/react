@@ -21,6 +21,9 @@ git diff HEAD : Shows all diff along with cached and normal
 git difftool : shows diff in tool
 git difftool HEAD fileName: shows diff of all in a file
 git diff --cached/--staged
+git brach newbranch : create a new branch locally
+git branch -m mynewbrach newbranch : rename branch
+git brach -d newbranch : deletes a brach will not delete the branch currently working
 ======================================Diff between commits=============
 git diff a90936c 9asfehs5 : shows diff between two commits
 git diff a90936c 9asfehs5 fileName: shows diff between two commits in this file

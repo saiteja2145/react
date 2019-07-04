@@ -9,6 +9,7 @@ Gain knowledge on git
 
 ## How to contribute
 Thinking of contribution is a contribution
+please fork this repo
 
 ## Copy right
 All rights reserved by sai teja  

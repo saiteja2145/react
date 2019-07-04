@@ -1,0 +1,22 @@
+a:link {
+ font-weight: bold;
+ text-decoration: underline;
+ color: #0099cc;
+ }
+a:visited {
+ font-weight: bold;
+ text-decoration: underline;
+ color: #990000;
+ }
+a:hover {
+ font-weight: normal;
+ text-decoration: none;
+ color: #ffffff;
+ background: #ff9933;
+ }
+a:active {
+ font-weight: normal;
+ text-decoration: none;
+ color: #ffffff;
+ background: #cc0000;
+ }

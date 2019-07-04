@@ -31,6 +31,7 @@ git merge newbranch : merges newbranch with current branch
 git merge newbranch --no-ff : no fast forward merge
 git mergetool : when merge conflict happens this will help it will only show when merge conflict is there
 git rebase branch-from-where-we-get -commits : copy all the commits from that brach to current brach
+git rebase --abort : aborting a rebase
 ======================================Diff between commits==========================
 git diff a90936c 9asfehs5 : shows diff between two commits
 git diff a90936c 9asfehs5 fileName: shows diff between two commits in this file

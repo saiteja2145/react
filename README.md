@@ -1,6 +1,7 @@
 # Starter WEB Project
 This is a simpler project to understand git and github.
-Adding Line for rebasing example.
+Adding Line for rebasing example, then more changes from the cureent
+branch to create scene.
 
 ## Intro
 Trying to learn git 

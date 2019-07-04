@@ -1,5 +1,6 @@
 # Starter WEB Project
 This is a simpler project to understand git and github.
+Adding Line for rebasing example.
 
 ## Intro
 Trying to learn git 

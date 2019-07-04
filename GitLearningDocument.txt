@@ -1,3 +1,4 @@
+<Designed and developed by sai teja for learning purpouse>
 git init - Initialize repository
 ls -al - list all files
 git add . -Adds all files in the project
@@ -26,6 +27,7 @@ git brach newbranch : create a new branch locally
 git branch -m mynewbrach newbranch : rename branch
 git brach -d newbranch : deletes a brach will not delete the branch currently working
 git checkout -b newbranch : creates and checkout to new branch
+git merge newbranch : merges newbranch with current branch
 ======================================Diff between commits==========================
 git diff a90936c 9asfehs5 : shows diff between two commits
 git diff a90936c 9asfehs5 fileName: shows diff between two commits in this file

@@ -9,3 +9,6 @@ Gain knowledge on git
 
 ## How to contribute
 Thinking of contribution is a contribution
+
+## Copy right
+All rights reserved by sai teja  

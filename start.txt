@@ -1,1 +1,2 @@
-This file for git ignore
+This file for git not a git ignore file
+some interesting data goes here

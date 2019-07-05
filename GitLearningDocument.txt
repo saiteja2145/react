@@ -54,7 +54,7 @@ git stash show stash@{1} : shows the data of that stash.
 git stash apply stash@{1} : applies the particular stash.
 git stash drop stash@{1} : removes the particular stash.
 git stash clear : will clear all the changes.
-git stash branch newbranch : create new branch and stash current stash to that branch and remove in this branch
+git stash branch newbranch : create and Move to new brach and apply all the changes in new branch and removes stash from all branches
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

@@ -61,6 +61,7 @@ git tag --list : list all the tags
 git show tagName : last commit of tag
 git tag --delete tagName : deletes a tag
 git tag -a tagName : creates a annotated tags
+git tag tagName -m "message" : creates message for tags
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

@@ -66,6 +66,7 @@ git tag -a tagName 8ahha9a : creates tag at that particular commit
 git tag -a tagName -f 8hhtatas : update the tag to mentioned commit
 git push origin tagName : push upto tag and relese it
 git push origin master --tags : push all tags
+git push origin :tagName : deletes a tag
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

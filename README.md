@@ -3,6 +3,8 @@ This is a simpler project to understand git and github.
 Adding Line for rebasing example, then more changes from the cureent
 branch to create scene.
 
+Updating the Readme file
+
 ## Intro
 Trying to learn git 
 

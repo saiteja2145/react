@@ -46,6 +46,8 @@ git config --global difftool.prompt false
 ===========================================stash=============================
 git stash : to stash files
 git stash apply||pop : recovers from stash
+git stash list : shows what added to stash
+git stash drop : removes the stash
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

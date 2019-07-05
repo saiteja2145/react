@@ -43,6 +43,9 @@ git config --global merge.tool p4merge
 git config --global mergetool.prompt false
 git config --global diff.tool p4merge
 git config --global difftool.prompt false
+===========================================stash=============================
+git stash : to stash files
+git stash apply||pop : recovers from stash
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

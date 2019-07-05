@@ -14,4 +14,4 @@ Thinking of contribution is a contribution
 please fork this repo
 
 ## Copy right
-All rights reserved by sai teja  
+All rights reserved by sai teja  for this repo.

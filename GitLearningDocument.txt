@@ -50,6 +50,7 @@ git stash list : shows what added to stash
 git stash drop : removes the stash
 git stash -u : Add all files including untracked files
 git stash pop : apply and removes files from stash
+git stash show stash@{1} : shows the data of that stash.
 =========================================git Alias=========================================
 git config --global alias.hist "log --oneline --decorate" : if we type  git hist this command will execute
 changes will be stored in git config file for editing.

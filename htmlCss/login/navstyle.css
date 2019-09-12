@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  background-color: #009688;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-container ul li {
+  font-size: 1.16rem;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+}
+
+.nav-container ul li:hover,
+.nav-container ul li:active,
+.sub-menu a:hover,
+.sub-menu a:active,
+.sub-menu-1 a:hover,
+.sub-menu-1 a:active,
+.sub-menu-2 a:hover,
+.sub-menu-2 a:active {
+  color: #e67e22;
+}
+
+.nav-container ul li:hover .sub-menu,
+.nav-container ul li:active .sub-menu,
+.nav-container ul li:hover .sub-menu-1,
+.nav-container ul li:active .sub-menu-1,
+.nav-container ul li:hover .sub-menu-2,
+.nav-container ul li:active .sub-menu-2 {
+  visibility: visible;
+}
+
+.nav-container ul li:hover .sub-menu a,
+.nav-container ul li:active .sub-menu a {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.main-menu {
+  padding: 12px 28px;
+}
+
+.sub-menu,
+.sub-menu-1,
+.sub-menu-2 {
+  background-color: #009688;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+}
+
+.sub-menu a,
+.sub-menu-1 a,
+.sub-menu-2 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.sub-menu a {
+  transform: translateX(-200px);
+  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  -o-transform: translateX(-200px);
+  transition: color, transform 0.5s ease;
+  -webkit-transition: color, transform 0.5s ease;
+  -moz-transition: color, transform 0.5s ease;
+  -ms-transition: color, transform 0.5s ease;
+  -o-transition: color, transform 0.5s ease;
+}
+
+.sub-menu-1 a {
+  opacity: 0;
+}
+
+.nav-container ul li:hover .sub-menu-1 a:nth-child(1) {
+  transition: opacity 0.3s ease 0.2s;
+  -webkit-transition: opacity 0.3s ease 0.2s;
+  -moz-transition: opacity 0.3s ease 0.2s;
+  -ms-transition: opacity 0.3s ease 0.2s;
+  -o-transition: opacity 0.3s ease 0.2s;
+}
+.nav-container ul li:hover .sub-menu-1 a:nth-child(2) {
+  transition: opacity 0.4s ease 0.4s;
+  -webkit-transition: opacity 0.4s ease 0.4s;
+  -moz-transition: opacity 0.4s ease 0.4s;
+  -ms-transition: opacity 0.4s ease 0.4s;
+  -o-transition: opacity 0.4s ease 0.4s;
+}
+.nav-container ul li:hover .sub-menu-1 a:nth-child(3) {
+  transition: opacity 0.5s ease 0.6s;
+  -webkit-transition: opacity 0.5s ease 0.6s;
+  -moz-transition: opacity 0.5s ease 0.6s;
+  -ms-transition: opacity 0.5s ease 0.6s;
+  -o-transition: opacity 0.5s ease 0.6s;
+}
+
+.nav-container ul li:hover .sub-menu-1 a {
+  opacity: 1;
+}

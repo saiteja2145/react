@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -13,6 +14,8 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /*--------------------------------------------*/
 /*--Reusable Components--*/
@@ -86,6 +89,12 @@ input[type="submit"] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: background-color 0.2s ease, border 0.2s ease,
+    color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease, border 0.2s ease,
+    color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease, border 0.2s ease,
+    color 0.2s ease;
   transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
 }
 
@@ -125,6 +134,14 @@ input[type="submit"]:active {
 /*--------------------------------------------*/
 
 header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("./img/hero.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./img/hero.jpg");
   background-size: cover;
@@ -138,7 +155,11 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -146,6 +167,22 @@ header {
   width: auto;
   float: left;
   margin-top: 20px;
+}
+
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
 }
 
 .main-nav {
@@ -166,14 +203,41 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s ease;
+  -webkit-transition: border-bottom 0.2s ease;
   transition: border-bottom 0.2s ease;
   padding: 8px 0px;
+  -moz-transition: border-bottom 0.2s ease;
+  -ms-transition: border-bottom 0.2s ease;
+  -o-transition: border-bottom 0.2s ease;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0 2px 2px #efefef;
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  padding: 16px 0px;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
 .section-meals {
   padding: 0;
 }
@@ -217,13 +281,29 @@ section {
   opacity: 0.7;
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease,
+    -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease,
+    -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease,
+    -webkit-transform 0.5s ease;
+  -moz-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -ms-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -o-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .meal-photo img:hover {
+  -webkit-transform: scale(1.03);
   transform: scale(1.03);
   opacity: 1;
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }
 
 .steps-box:first-child {
@@ -256,6 +336,10 @@ section {
   float: left;
   font-size: 150%;
   margin-right: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .btn-app img {
@@ -282,11 +366,16 @@ section {
   height: auto;
   margin-bottom: 15px;
   opacity: 0.7;
+  -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .box img:hover {
   opacity: 1;
+  -webkit-transform: scale(1.17);
   transform: scale(1.17);
 }
 .city-feature {
@@ -299,6 +388,7 @@ a:visited {
   color: #e67e22;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom 0.2s ease, color 0.2s ease;
   transition: border-bottom 0.2s ease, color 0.2s ease;
 }
 
@@ -314,6 +404,14 @@ a:active {
 }
 
 .section-testimonials {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(0, 0, 0, 0.8))
+    ),
+    url(img/back-customers.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(img/back-customers.jpg);
   background-size: cover;
@@ -360,14 +458,21 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px #efefef;
   box-shadow: 0 2px 2px #efefef;
+  -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .plan-box:hover,
 .plan-box:active {
+  -webkit-transform: scale(1.08);
   transform: scale(1.08);
+  -webkit-box-shadow: 6 12px 12px #efefef;
   box-shadow: 6 12px 12px #efefef;
 }
 
@@ -463,6 +568,7 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
+  -webkit-transition: color 02s ease;
   transition: color 02s ease;
 }
 .footer-nav li a:hover,
@@ -485,6 +591,7 @@ footer p {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+  -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 .ion-social-facebook:hover {

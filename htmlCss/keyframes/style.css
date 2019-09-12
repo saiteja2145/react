@@ -1,0 +1,45 @@
+body {
+  background: #333;
+}
+
+.box {
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+  0% {
+    background: #fff;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background: red;
+    left: 300px;
+    top: 0;
+  }
+  50% {
+    background: green;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background: blue;
+    left: 0;
+    top: 300px;
+  }
+  100% {
+    background: #fff;
+    left: 0;
+    top: 0;
+  }
+}

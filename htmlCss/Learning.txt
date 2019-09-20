@@ -1,0 +1,80 @@
+Always Use rem instead of giving pixels
+----------------------------------
+transform:translate will move the element to element width
+----------------------------------
+Use keyframes for animations
+Eg: 
+@keyframes move-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+animation :  move-in-right 2s ease;
+----------------------------------
+backface-visibility: hidden;
+removes the backside visibility
+----------------------------------
+background-clip: text;
+shows text with linear gradient
+for this use color :transperent
+----------------------------------
+text-shadow: 0.5rem 1rem 2rem rgba(77, 74, 74, 0.2);
+----------------------------------
+scale zoom element
+----------------------------------
+outline-offset: 2rem;
+space between outline and border
+----------------------------------
+box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+reference
+----------------------------------
+linear-gradient(to right, #7ed56f, #28b485);
+for color blending
+background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+    url("../img/nat-6.jpg");
+    along with image
+
+ background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg); 
+    solid gradient
+----------------------------------
+perspective: 150rem;
+for rotation try to give higher value
+----------------------------------
+background-blend-mode: screen;
+gives some image effects 
+----------------------------------
+clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+creates a polygon starts clockwise
+----------------------------------
+ box-decoration-break: clone;
+ after breaking  into two lines padding and margin will apply
+ ---------------------------------
+  shape-outside: circle(50% at 50% 50%);
+  with which shape the outside circle should be.
+  ---------------------------------
+  filter: blur(3px) brightness(80%);
+  applies some filters to image.
+  ---------------------------------
+  object-fit: cover;
+  make image or video to fit all the width along with aspect ratio.
+  ---------------------------------
+ background-size: cover;
+ fit the background correctly
+ ----------------------------------
+ calc((100% - 6rem) / 2)
+ calculatios
+ ----------------------------------

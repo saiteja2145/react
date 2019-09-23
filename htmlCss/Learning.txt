@@ -78,3 +78,44 @@ creates a polygon starts clockwise
  calc((100% - 6rem) / 2)
  calculatios
  ----------------------------------
+ Cubic-bezire
+ This will give custom animations 
+ this will have 4 values we can visit some Cubic-bezire sites and copy this values.
+ -----------------------------------
+ transform-origin
+ normally if we rotate it will rotate from middle
+ but if u configure right then roate 45deg from right side.
+ -----------------------------------
+ display :table:cell
+ this will make two divs have same width and height.
+ and parent div should have display table.
+ vertcal-align:middle 
+ this will vertically center the elements inside table  
+ ------------------------------------
+ column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+    make text divide into columns
+    count for dividing the text into no of columns
+    gap is space between them
+    rule is like line between files.
+---------------------------------------
+hypens auto will create hiphens in middle of word
+if the word is big.
+----------------------------------------
+:target
+ if the current element id is targeted.
+ ---------------------------------------
+ ::-webkit-input-placeholder{
+ } 
+selcets placeholder colors
+----------------------------------------
+:not(:last-child) 
+selects all child except Last child
+:not(:hover)
+selcets all except hover one 
+----------------------------------------
+.form__input:focus:invalid {
+  selcets the input focused invalid field
+}
+-----------------------------------------

@@ -1,0 +1,79 @@
+Axios Learning
+
+Install Axios via various methods
+
+Get Request : 
+  axios({                                                             
+  method: "get",
+  url: "https://jsonplaceholder.typicode.com/todos",
+    params: {
+      _limit: 5
+    }
+  })
+  .then(res => showOutput(res))
+  .catch(err => console.error(err));
+  
+  Here Method is like get, post, delete, put, patch, etc
+  Url is the request URL where to send data.
+  
+  Params are the paraments we can send in the URL like
+  Eg: "https://jsonplaceholder.typicode.com/todos?_limit=5"
+  the above example with params will be converted like this.
+  
+  Alternatively we can shorten this like:
+  axios.get("https://jsonplaceholder.typicode.com/todos", {
+    params: {
+      _limit: 5
+    }
+  })
+  
+  Another Alternative
+   axios.get("https://jsonplaceholder.typicode.com/todos?_limit=5");
+
+Post Request :
+  axios({
+    method: "post",
+    url: "https://jsonplaceholder.typicode.com/todos",
+      data: {
+        title: "New Todo",
+        completed: false
+      }
+  })
+  
+  Alternative : 
+  axios.post("https://jsonplaceholder.typicode.com/todos", {
+    title: "New Todo",
+    completed: false
+  })
+
+Put API : 
+  Put is for updating data.
+  Put is like replace existing data and updates with a new one.
+  Patch is like updating some parts of the data.
+  
+  axios.put("https://jsonplaceholder.typicode.com/todos/1", {
+    title: "Updated Todo",
+    completed: true
+  })
+  
+  Put response :
+  {
+    "title": "Updated Todo",
+    "completed": true,
+    "id": 1
+  }
+  
+  Patch response : 
+  
+  {
+    "title": "Updated Todo",
+    "userId": 1,
+    "completed": true,
+    "id": 1
+  }
+  
+  Observe that Put will remove UserId as it will replace but patch
+  will not remove userId.
+  
+Delete : 
+  axios.delete("https://jsonplaceholder.typicode.com/todos/1")
